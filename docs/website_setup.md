@@ -15,7 +15,7 @@ This guide documents the process for setting up a professional documentation web
 ### 1. Initialize Docusaurus Project
 ```bash
 # Navigate to parent directory (outside docs folder)
-cd /home/atuld/Desktop/GennextIT/ERP\ Documents/
+cd /ERP\ Documents/
 
 # Create Docusaurus website
 npx create-docusaurus@latest vecmocon-erp-website classic
