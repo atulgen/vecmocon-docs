@@ -234,34 +234,125 @@ pnpm serve
 
 ### 9. Deployment Options
 
-#### Option A: Netlify (Recommended for quick setup)
-1. Push code to GitHub repository
-2. Connect repository to Netlify
-3. Set build command: `pnpm build`
-4. Set publish directory: `build`
-5. Deploy
-
-#### Option B: GitHub Pages
+#### Option A: GitHub Pages (Free & Integrated)
 ```bash
-# Install gh-pages package
-pnpm add --save-dev gh-pages
+# 1. Install gh-pages package
+npm install --save-dev gh-pages
 
-# Update package.json scripts
+# 2. Update docusaurus.config.ts
+# Add to config:
+organizationName: 'atulgen',
+projectName: 'vecmocon-docs',
+deploymentBranch: 'gh-pages',
+
+# 3. Update package.json scripts
 "scripts": {
   "deploy": "docusaurus deploy"
 }
 
-# Update docusaurus.config.js
-organizationName: 'your-github-username',
-projectName: 'vecmocon-erp-docs',
-
-# Deploy
-pnpm deploy
+# 4. Deploy to GitHub Pages
+npm run deploy
 ```
 
-#### Option C: Manual Static Hosting
-- Build the site: `pnpm build`
-- Upload the `build/` folder to any static hosting service (AWS S3, Vercel, etc.)
+**Result:** Website available at `https://atulgen.github.io/vecmocon-docs/`
+
+#### Option B: Netlify (Recommended - Fast & Professional)
+1. **Connect Repository:**
+   - Go to [netlify.com](https://netlify.com)
+   - Sign up/Login with GitHub
+   - Click "Add new site" → "Import from Git"
+   - Select `atulgen/vecmocon-docs` repository
+
+2. **Build Settings:**
+   - **Build command:** `npm run build`
+   - **Publish directory:** `build`
+   - **Node version:** 18.x
+
+3. **Environment Variables** (if needed):
+   - Add any required environment variables
+
+4. **Deploy:**
+   - Click "Deploy site"
+   - Website gets custom domain or `*.netlify.app` URL
+
+#### Option C: Vercel (Fast & Modern)
+1. **Connect Repository:**
+   - Go to [vercel.com](https://vercel.com)
+   - Sign up/Login with GitHub
+   - Click "New Project"
+   - Import `atulgen/vecmocon-docs`
+
+2. **Configure Project:**
+   - **Framework:** Docusaurus
+   - **Root Directory:** `./` (leave default)
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `build`
+
+3. **Deploy:**
+   - Click "Deploy"
+   - Get instant preview and production URL
+
+#### Option D: Manual Static Hosting
+```bash
+# 1. Build the site
+npm run build
+
+# 2. The build/ folder contains static files ready for deployment
+
+# 3. Upload build/ folder to any static hosting:
+# - AWS S3 + CloudFront
+# - Google Cloud Storage
+# - Azure Static Web Apps
+# - DigitalOcean Spaces
+# - Any web server
+```
+
+### 10. Recommended Deployment: Netlify
+
+**Why Netlify?**
+- ✅ **Free tier** with custom domains
+- ✅ **Automatic HTTPS** certificates
+- ✅ **Instant deployments** on git push
+- ✅ **Form handling** (if needed)
+- ✅ **CDN** for global performance
+- ✅ **Preview deployments** for PRs
+
+**Setup Steps:**
+1. Connect GitHub repo to Netlify
+2. Set build command: `npm run build`
+3. Set publish directory: `build`
+4. Deploy automatically on every push
+
+**Expected Result:** Professional website at `https://vecmocon-erp-docs.netlify.app/`
+
+### 11. Build Commands Reference
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server (localhost:3000)
+npm start
+
+# Build for production
+npm run build
+
+# Test production build locally
+npm run serve
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+### 12. Custom Domain Setup
+
+**For any hosting provider:**
+1. Purchase domain (e.g., vecmocon-docs.com)
+2. Configure DNS settings to point to hosting provider
+3. Enable HTTPS (usually automatic)
+4. Set up custom domain in hosting dashboard
+
+**Recommended Domain:** `docs.vecmocon.com` or `erp.vecmocon.com`
 
 ## Features Included
 - ✅ **Search functionality** across all documentation

@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'vecmocon', // Usually your GitHub org/user name.
-  projectName: 'erp-implementation-docs', // Usually your repo name.
+  organizationName: 'atulgen', // Usually your GitHub org/user name.
+  projectName: 'vecmocon-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -88,7 +88,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/vecmocon/erp-implementation-docs',
+          href: 'https://github.com/atulgen/vecmocon-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -140,7 +140,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/vecmocon/erp-implementation-docs',
+              href: 'https://github.com/atulgen/vecmocon-docs',
             },
           ],
         },
