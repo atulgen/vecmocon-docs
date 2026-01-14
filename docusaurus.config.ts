@@ -102,7 +102,7 @@ const config: Config = {
           items: [
             {
               label: 'Overview',
-              to: '/docs/README',
+              to: '/docs/',
             },
             {
               label: 'Process Summary',
@@ -119,15 +119,15 @@ const config: Config = {
           items: [
             {
               label: 'Sales',
-              to: '/docs/sales_mappings/README',
+              to: '/docs/sales_mappings/',
             },
             {
               label: 'Finance',
-              to: '/docs/finance_mappings/README',
+              to: '/docs/finance_mappings/',
             },
             {
               label: 'Production',
-              to: '/docs/production_mappings/README',
+              to: '/docs/production_mappings/',
             },
           ],
         },
