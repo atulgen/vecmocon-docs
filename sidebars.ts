@@ -19,8 +19,16 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Getting Started',
       items: [
+        'erpnext_installation_guide',
         'process_summary',
         'erp_scope_of_work',
+        {
+          type: 'category',
+          label: 'Setup & Troubleshooting',
+          items: [
+            'setup/errors/installation_errors',
+          ],
+        },
       ],
     },
     {

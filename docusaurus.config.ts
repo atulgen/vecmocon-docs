@@ -105,6 +105,10 @@ const config: Config = {
               to: '/docs/',
             },
             {
+              label: 'Installation Guide',
+              to: '/docs/erpnext_installation_guide',
+            },
+            {
               label: 'Process Summary',
               to: '/docs/process_summary',
             },

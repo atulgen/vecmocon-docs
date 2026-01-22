@@ -20,6 +20,8 @@ This documentation covers the alignment of Vecmocon Technologies' business proce
 
 
 ## Documentation Structure
+- [`erpnext_installation_guide.md`](erpnext_installation_guide.md): Complete ERPNext v15 local installation guide
+- [`setup/errors/installation_errors.md`](setup/errors/installation_errors.md): Error logging and troubleshooting guide
 - [`process_summary.md`](process_summary.md): Summary of current processes
 - [`erp_scope_of_work.md`](erp_scope_of_work.md): Complete ERP implementation scope and deliverables
 - [`gap_analysis.md`](gap_analysis.md): Identified gaps and solutions
