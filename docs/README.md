@@ -42,3 +42,33 @@ This documentation covers the alignment of Vecmocon Technologies' business proce
 - Stock and Inventory
 - Accounting and Finance
 - Manufacturing and Supply Chain
+
+
+---
+
+Vecmocon Technologies is an Indian deep-tech startup focused on electric vehicle (EV) components and intelligent mobility solutions. Here's what they're about:
+
+**Core Business:**
+They develop the "brain and nervous system" of electric vehicles - creating smart, interconnected EV components that work together as an intelligent ecosystem.
+
+**Main Products:**
+- **Battery Management System (BMS)** - Smart systems for swappable or fixed battery packs with CAN communication
+- **Vehicle Intelligence Module (VIM)** - The "brain" that coordinates communication between all vehicle subsystems
+- **EV Chargers** - 1.5kW chargers with CAN communication for 2-wheelers and 3-wheelers
+- **EV Cluster** - Digital instrument clusters displaying critical ride information
+- **Motor Controllers** - Advanced controllers with field-oriented control algorithms
+
+**Their Approach:**
+They focus on creating a holistic EV ecosystem where components communicate intelligently to provide features like accurate range estimation, preventive maintenance, fast charging across voltages, and precise battery health monitoring.
+
+**Scale & Impact:**
+- 100+ customers
+- 75,000+ units deployed
+- 7 patents
+- Recently raised $18 million led by Ecosystem Integrity Fund
+- Headquartered in Noida, Uttar Pradesh
+
+**Target Market:**
+They work with EV manufacturers, battery companies, and mobility businesses across India, serving 2-wheeler and 3-wheeler segments primarily. Their clients include brands like Okinawa, BGauss, and Livguard.
+
+They also offer "Battery Buddy" apps (Windows and Android) for real-time battery monitoring and control.
