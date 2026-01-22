@@ -109,6 +109,10 @@ const config: Config = {
               to: '/docs/erpnext_installation_guide',
             },
             {
+              label: 'India Compliance Licensing',
+              to: '/docs/india_compliance_licensing',
+            },
+            {
               label: 'Process Summary',
               to: '/docs/process_summary',
             },

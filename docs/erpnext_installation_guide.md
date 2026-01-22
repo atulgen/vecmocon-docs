@@ -87,14 +87,23 @@ bench --version
 
 ### Step 5: Initialize Frappe Bench
 ```bash
-# Create frappe-bench directory
+# Create frappe-bench directory (includes Frappe framework)
 bench init frappe-bench --frappe-branch version-15
 
 # Change to bench directory
 cd frappe-bench
 ```
 
-### Step 6: Create ERPNext Site
+### Step 6: Install ERPNext App into Bench
+```bash
+# Download ERPNext app to bench
+bench get-app erpnext https://github.com/frappe/erpnext --branch version-15
+
+# Download India Compliance app to bench (use v15.x for Frappe v15 compatibility)
+bench get-app india_compliance https://github.com/resilient-tech/india-compliance --branch v15.7.0
+```
+
+### Step 7: Create ERPNext Site
 ```bash
 # Create new site
 bench new-site vecmocon.localhost \
@@ -102,16 +111,10 @@ bench new-site vecmocon.localhost \
   --admin-password admin123 \
   --mariadb-root-password your_db_password
 
-# Install ERPNext v15
-bench --site vecmocon.localhost install-app erpnext --version version-15
-```
+# Install ERPNext into the site
+bench --site vecmocon.localhost install-app erpnext
 
-### Step 7: Install India Compliance
-```bash
-# Get India Compliance app
-bench get-app india_compliance https://github.com/resilient-tech/india-compliance.git
-
-# Install on site
+# Install India Compliance into the site
 bench --site vecmocon.localhost install-app india_compliance
 ```
 
@@ -237,11 +240,36 @@ echo 'export PATH=$PATH:~/.local/bin' >> ~/.bashrc
 
 ## Apps Compatibility Matrix
 
-| App | ERPNext v15 | ERPNext v16 | Status |
-|-----|-------------|-------------|---------|
-| ERPNext Core | ✅ v15.x | ✅ v16.x | Stable |
-| India Compliance | ✅ v15.7.0+ | ✅ v16.x | Stable |
-| Frappe Framework | ✅ v15.x | ✅ v16.x | Required |
+| App | ERPNext v15 | ERPNext v16 | Status | Cost |
+|-----|-------------|-------------|---------|------|
+| ERPNext Core | ✅ v15.x | ✅ v16.x | Stable | Free (Open Source) |
+| India Compliance | ✅ v15.7.0+ | ✅ v16.x | Stable | Free App + Paid API Credits |
+| Frappe Framework | ✅ v15.x | ✅ v16.x | Required | Free (Open Source) |
+
+### India Compliance Licensing Details
+
+**App License:** MIT License (Completely Free & Open Source)
+
+**Cost Structure:**
+- **App Download & Installation:** $0 (Free)
+- **GST Calculations & Templates:** $0 (Free)
+- **Basic Compliance Features:** $0 (Free)
+- **API Credits:** Pay-per-use for government portal integration
+
+**Credit System:**
+- **Free Trial:** 500 credits (3 months validity)
+- **Pricing:** ₹X per 1000 API requests (minimum 1000/year)
+- **What Requires Credits:**
+  - e-Invoicing submissions to GST portal
+  - e-Way bill generation
+  - Real-time GST verification
+  - Government API calls
+- **Business Model:** Free app, paid credits for government API access
+
+**For Vecmocon Implementation:**
+- **Development Phase:** Use free trial credits (500 requests)
+- **Production Phase:** ~₹5,000-15,000/year based on transaction volume
+- **No Hidden Costs:** Transparent pay-per-use model
 
 ## Next Steps
 1. Complete company setup

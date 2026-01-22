@@ -20,6 +20,7 @@ const sidebars: SidebarsConfig = {
       label: 'Getting Started',
       items: [
         'erpnext_installation_guide',
+        'india_compliance_licensing',
         'process_summary',
         'erp_scope_of_work',
         {

@@ -21,6 +21,7 @@ This documentation covers the alignment of Vecmocon Technologies' business proce
 
 ## Documentation Structure
 - [`erpnext_installation_guide.md`](erpnext_installation_guide.md): Complete ERPNext v15 local installation guide
+- [`india_compliance_licensing.md`](india_compliance_licensing.md): India Compliance licensing, costs, and credit system
 - [`setup/errors/installation_errors.md`](setup/errors/installation_errors.md): Error logging and troubleshooting guide
 - [`process_summary.md`](process_summary.md): Summary of current processes
 - [`erp_scope_of_work.md`](erp_scope_of_work.md): Complete ERP implementation scope and deliverables
